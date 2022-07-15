@@ -64,7 +64,7 @@ app.post('/getMessage', (request, response) => {
     })
     let mailOption = {
         from: request.body.sender,
-        to: `jpanofuente@gmail.com, ${request.body.sender}`,
+        to: `Your Email here!!, ${request.body.sender}`,
         subject: request.body.subject,
         text: request.body.message,
     }
