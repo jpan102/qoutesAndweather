@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY WEB PAGE!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="row container-fluid text-center col-12 m-1 ">
+        <div class="titleContainer pt-2 col-9">
+            <h1 id="titleQoutes" class="titleQoutes pt-4"> Welcome </h1>
+        </div>
+        <div class="col-3 pr-2">
+            <div class="text-left weatherContainer">
+                    <h5 id="date">Date</h5>
+                    <h5 id="location">location</h5>
+                    <h5 id="weatherStatusmain">weatherStatusmain</h5>
+                    <img id="weatherIcon" class="ml-5">
+                    <h5 id="maxTemp">maxTemp</h5>
+            </div>
+        </div>
+    </div>
+    <div class="row container-fluid">
+        <div class="textContainer col-12 m-3">
+            <p id="textQoutes" class="text-center">
+                This website is created by John Paul Nofuente using 
+                different API to get random inspirational qoutes, weather forecast
+                with the use of NodeJs. The responsiveness of this webpages is not done 
+                because i am a back-end developer and focusing on back-end only.
+            </p>
+        </div>
+        <div class="text-center">
+            <button hidden="hidden" class="btn btn-danger" id="btnLoad">Generate</button>
+        </div>
+         <br><br>
+         <div class="divTablecontainer">
+         <form id="formBody">
+                <table class="table centerTable table-striped text-left table-responsive">
+                    <tr>
+                        <thead class="text-center">
+                            <tr>
+                            <th scope="col" colspan="4">E-mail Form</th>
+                            </tr>
+                        </thead>
+                    </tr>
+                    <tbody>
+                    <tr>
+                    <th scope="row" >Your E-mail</th>
+                    <td><input type="email" id="yourEmail" required></td>
+                    </tr>
+                    <tr>
+                    <th scope="row">Subject</th>
+                    <td><input type="text"  id="subject" required></td>
+                    </tr>
+                    <tr>
+                    <th scope="row" required>Body</th>
+                    <td><textarea name="" id="bodyMessage" cols="50" rows="5" style="resize: none;"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="text-center">
+                            <button class="btn btn-primary center" id="submitMessage" onclick=getMessage()> 
+                                Submit 
+                            </button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <br><br><br>
+            </form>
+        </div>
+    <footer>
+        <p >
+            <img src="./res/facebook.png" class="fblogo">
+             Facebook |<a href="https://www.facebook.com/nofuente"> John Paul Nofuente </a>|                 
+            <img src="./res/linkedin.png" class="fblogo">
+            LinkedIn |<a href="https://www.linkedin.com/in/john-paul-nofuente-62ab3223b/"> John Paul Nofuente </a>|</p>
+    </footer>
+</body>
+<script src="script.js"> 
+</script>
+</html>
